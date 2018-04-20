@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Then VS Now</h1>
+
+    <form action="handle-upload.html" method="POST">
+        <input type="file" name="pre" />
+        <br/>
+        <textarea type="text" cols="10" rows="2" placeholder="Opisi sliku ovde..."></textarea>
+        <br/>
+        <input type="file" name="posle">
+        <br/>
+        <textarea type="text" cols="10" rows="2" placeholder="Opisi sliku ovde..."></textarea>
+        <br/>
+        <br/>
+        <br/>
+        <input type="submit" name="send" value="Send" />
+    </form>
+
+    <form action="handle-upload.html">
+        <h1>Za koji klub navijas?</h1>
+        <p>Koji klub mrzis</p>
+        Partizan
+        <input type="checkbox" name="mrzis"> Zvezda
+        <input type="checkbox" name="mrzis"> Cukaricki
+        <input type="checkbox" name="mrzis">
+        <br>
+        <p>Odaberi klub:
+            <br> Partizan
+            <input type="radio" name="klub"> Zvezda
+            <input type="radio" name="klub"> Cukaricki
+            <input type="radio" name="klub">
+        </p>
+        <br>
+        <textarea name="ralog" cols="30" rows="10" placeholder="Napisi recima"></textarea>
+        <br>
+        <input type="reset">
+        <button>
+            <img src="https://orig00.deviantart.net/f5ed/f/2010/108/c/5/green_submit_button_by_rukiaxichigo15.jpg" width="50" height="30"
+                alt=""> Add
+        </button>
+    </form>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <form>
+        <fieldset>
+            <legend>Personal data</legend>
+            <label for="Name">Name:
+                <br/>
+                <input type="text" name="Name" id="Name">
+            </label>
+            <br/>
+            <label for="Email">Email:
+                <br/>
+                <input type="text" name="Email" id="Email">
+            </label>
+            <br/>
+            <label for="Phone number">Phone number:
+                <br/>
+                <input type="text" name="Phone number" id="Phone number">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Location</legend>
+            <label for="Vozdovac">
+                <input type="radio" name="Opstina" value="Vozdovac" id="Vozdovac" /> Vozdovac
+            </label>
+            <br/>
+            <label for="Cukarica">
+                <input type="radio" name="Opstina" value="Cukarica" id="Cukarica" /> Cukarica</label>
+            <br/>
+            <label for="Zvezdara">
+                <input type="radio" name="Opstina" value="Zvezdara" id="Zvezdara" /> Zvezdara</label>
+            <br/>
+            <label for="Vracar">
+                <input type="radio" name="Opstina" value="Vracar" id="Vracar" /> Vracar</label>
+            <br/>
+            <label for="NBG">
+                <input type="radio" name="Opstina" value="NoviBeograd" id="NBG" /> Novi Beograd</label>
+            <br/>
+        </fieldset>
+        <fieldset>
+            <legend>Event info</legend>
+            <select name="event">
+                <option value="Birthday">Birthday</option>
+                <option value="Wedding" selected="selected">Wedding</option>
+                <option value="Company">Company</option>
+            </select>
+            <label for="broj">
+                <p>Broj gostiju:</p>
+                <input type="text" name="broj gostiju" placeholder="40 osoba" id="broj">
+            </label>
+
+        </fieldset>
+        <br/>
+        <input type="submit" name="Submit">
+    </form>
+</body>
+
+</html>
