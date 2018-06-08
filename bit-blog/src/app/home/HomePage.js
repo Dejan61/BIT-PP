@@ -1,9 +1,10 @@
 import React from 'react';
 import PostList from './PostList';
 import data from '../../services/dataServices';
+import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props)
 
         this.loadPost = this.loadPosts.bind(this);
@@ -13,21 +14,24 @@ class Home extends React.Component {
         }
     }
 
-    loadPosts(){
+    loadPosts() {
         return data.getPosts().then(data => {
             this.setState({
                 posts: data
             })
         })
     }
-    componentDidMount(){
+
+    componentDidMount() {
         this.loadPosts();
     }
-    render (){
-        return(
+
+    render() {
+        return (
             <div>
                 <h2> POSTS</h2>
-                <PostList posts={this.state.posts}/>
+                <Link to='/posts/new' className='newPost'>New Post</Link>
+                <PostList posts={this.state.posts} />
             </div>
         )
     }
