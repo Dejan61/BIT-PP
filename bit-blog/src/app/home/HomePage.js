@@ -29,11 +29,12 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <h2> POSTS</h2>
-                <Link to='/posts/new' className='newPost'>New Post</Link>
+                <Link to='/posts/new' className='newPost hvr-icon-grow offset-10 col-2'>New Post <i className="fa fa-edit hvr-icon"></i><i class="edit"></i></Link>
+                <h2 className="h2-posts"> POSTS</h2>
                 <PostList posts={this.state.posts} />
             </div>
         )
     }
 }
 export default Home;
+
